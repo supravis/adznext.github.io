@@ -15,6 +15,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+
+
 a {
   color: #1bb1dc;
   transition: 0.5s;
@@ -135,7 +137,8 @@ h6 {
 }
 
 #topbar .social-links a {
-  color: #535074;
+  /* color: #535074; */
+  color:white;
   padding: 4px 12px;
   display: inline-block;
   line-height: 1px;
@@ -171,7 +174,7 @@ h6 {
 #header.header-pages {
   height: 70px;
   padding: 15px 0;
-  background-color: #fff;
+  background-color: #413e66;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 
@@ -192,7 +195,8 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #413e66;
+  /* color: #413e66; */
+  color: white;
   text-decoration: none;
 }
 
@@ -277,7 +281,8 @@ h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: #413e66;
+  /* color: #413e66; */
+  color: white;
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -289,7 +294,8 @@ h6 {
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #1bb1dc;
+  /* color: #1bb1dc; */
+  color: white;
   text-decoration: none;
 }
 
@@ -1484,6 +1490,7 @@ h6 {
   #header {
     height: 70px;
     padding: 15px 0;
+    background-color: #413e66;
   }
 
   #header .logo h1 {
@@ -1686,7 +1693,8 @@ h6 {
 	 height: 100%;
 	 z-index: 1;
    background: #f5f8fd;
-	 transition: width 400ms;
+   transition: width 400ms;
+   display: none;
 }
  .main-head:hover {
 	 width: 436px;
@@ -1746,4 +1754,63 @@ h6 {
   color: black;
   text-shadow: -10px 30px 0px gray;
 }
+
+
+/* Test */
+
+.header-unit {
+  height: 100%;
+  border: 2px solid #000;
+  border-right:none;
+  border-left: none;
+  position: relative;
+  padding: 20px;
+}
+#video-container {
+  position: absolute;
+}
+#video-container {
+  top:0%;
+  left:0%;
+  height:100%;
+  width:100%;
+  overflow: hidden;
+}
+video {
+  position:absolute;
+  z-index:0;
+}
+video.fillWidth {
+  /* width: 100%; */
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url('img/intro-bg.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+
+
 
