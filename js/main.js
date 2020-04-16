@@ -8,14 +8,45 @@
         $(this).remove();
       });
     }
+
+   
+
+    const button = document.getElementById('sidenav');
+
+      $("#sidenav").hover(function(){
+        $('#publisher').css('display','none');
+        $('#sidebarcon').css('display','block');
+        
+        }, function(){
+        $('#publisher').css('display','block');
+        $('#sidebarcon').css('display','none');
+        
+      });
+
+      $("#sidenav2").hover(function(){
+        $('#publisher2').css('display','none');
+        $('#sidebarcon2').css('display','block');
+        
+        }, function(){
+        $('#publisher2').css('display','block');
+        $('#sidebarcon2').css('display','none');
+        
+      });
+
   });
+
+  
 
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
+      $("#sidenav").css('display','none');
+      $("#sidenav2").css('display','none');
     } else {
       $('.back-to-top').fadeOut('slow');
+      $("#sidenav").css('display','block');
+      $("#sidenav2").css('display','block');
     }
   });
   $('.back-to-top').click(function(){
