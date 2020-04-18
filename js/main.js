@@ -16,20 +16,23 @@
       $("#sidenav").hover(function(){
         $('#publisher').css('display','none');
         $('#sidebarcon').css('display','block');
+        $('#sidenav').css('background','#f5f8fd');
         
         }, function(){
         $('#publisher').css('display','block');
         $('#sidebarcon').css('display','none');
-        
+        $('#sidenav').css('background','');
       });
 
       $("#sidenav2").hover(function(){
         $('#publisher2').css('display','none');
         $('#sidebarcon2').css('display','block');
+        $('#sidenav2').css('background','#f5f8fd');
         
         }, function(){
         $('#publisher2').css('display','block');
         $('#sidebarcon2').css('display','none');
+        $('#sidenav2').css('background','');
         
       });
 
