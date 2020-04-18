@@ -33,6 +33,18 @@
         
       });
 
+      $("#pubsidebar").hover(function(){
+        $('#p').css('color','red');
+      }, function(){
+        $('#p').css('color','black');
+      });
+
+      $("#advsidebar").hover(function(){
+        $('#a').css('color','red');
+      }, function(){
+        $('#a').css('color','black');
+      });
+
   });
 
   
@@ -43,10 +55,12 @@
       $('.back-to-top').fadeIn('slow');
       $("#sidenav").css('display','none');
       $("#sidenav2").css('display','none');
+      $("#nonvidsidebar").css('display','block');
     } else {
       $('.back-to-top').fadeOut('slow');
       $("#sidenav").css('display','block');
       $("#sidenav2").css('display','block');
+      $("#nonvidsidebar").css('display','none');
     }
   });
   $('.back-to-top').click(function(){
