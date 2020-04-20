@@ -1986,14 +1986,14 @@ video.fillWidth {
 }
 
 button {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border:none;
-  outline:none;
-  background: black;
-  margin: 20px;
-  cursor:pointer;
+  background: #1bb1dc;
+    border: 1px solid #1bb1dc;
+    width: 35%;
+    padding: 6px 0;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 #sidebarcon {
