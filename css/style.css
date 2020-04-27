@@ -169,7 +169,7 @@ h6 {
   top: 0;
   right: 0;
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 900;
 }
 
 #header.header-scrolled,
@@ -1585,6 +1585,7 @@ h6 {
   transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
   transform: translateX(-100%);
   left: 60px;
+  z-index: 5;
 }
 
 #menu.expanded {
@@ -1694,7 +1695,7 @@ h6 {
 	 bottom: 0;
 	 width: 83px;
 	 height: 100%;
-	 z-index: 1;
+	 z-index: 905;
    /* background: #f5f8fd; */
    transition: width 400ms;
    /* display: none; */
@@ -1707,7 +1708,7 @@ h6 {
 	 bottom: 0;
 	 width: 83px;
 	 height: 100%;
-	 z-index: 1;
+	 z-index: 905;
    /* background: #f5f8fd; */
    transition: width 400ms;
    height: 100vh;
@@ -2136,9 +2137,9 @@ button {
   position: fixed;
   top: 50%;
   left: 6%;
-  margin-left: -10vh;
+  margin-left: -19vh;
   opacity: 0.5;
-  font-size: 10vh;
+  font-size: 5vh;
 }
 
 .right-centered {
@@ -2151,10 +2152,10 @@ button {
 .right-centered-sidebar-sha {
   position: fixed;
   top: 50%;
-  left: 100%;
-  margin-left: -10vh;
+  left: 90%;
+  /* margin-left: -20vh; */
   opacity: 0.5;
-  font-size: 10vh;
+  font-size: 5vh;
 }
 
 .video-container-subpage {
