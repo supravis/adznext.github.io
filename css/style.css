@@ -1491,7 +1491,7 @@ h6 {
   }
 
   #header {
-    height: 70px;
+    height: 5.8em;
     padding: 15px 0;
     background-color: #413e66;
   }
@@ -1922,7 +1922,13 @@ h6 {
   left:0%;
   height:100%;
   width:100%;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 6vw;
 }
 video {
   position:absolute;
@@ -2177,4 +2183,14 @@ button {
 
 .fillWidthsubpages {
   width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .nomobile {
+      display:none;
+  }
 }
