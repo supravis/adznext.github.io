@@ -59,7 +59,7 @@
       $("#sidenav").css('display','none');
       $("#sidenav2").css('display','none');
       $("#nonvidsidebar").css('display','block');
-      if(window.innerWidth < 500) {
+      if(window.innerWidth < 850) {
         $("#sidenav").css('display','none');
         $("#sidenav2").css('display','none');
         $("#nonvidsidebar").css('display','none');
@@ -69,7 +69,7 @@
       $("#sidenav").css('display','block');
       $("#sidenav2").css('display','block');
       $("#nonvidsidebar").css('display','none');
-      if(window.innerWidth < 500) {
+      if(window.innerWidth < 850) {
         $("#sidenav").css('display','none');
         $("#sidenav2").css('display','none');
         $("#nonvidsidebar").css('display','none');

@@ -546,6 +546,7 @@ h6 {
 #about .about-img {
   position: relative;
   margin: 30px 30px 30px 30px;
+  display:none;
 }
 
 #about .about-img img {
@@ -2192,5 +2193,49 @@ button {
 
   .nomobile {
       display:none;
+  }
+}
+
+#sidenav2 {
+  display: none;
+}
+
+#sidenav {
+  display: none;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    #sidenav2 {
+      display: block;
+    }
+    #sidenav {
+      display: block;
+    }
+    #about .about-img {
+      position: relative;
+      margin: 30px 30px 30px 30px;
+      display: block;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    #sidenav2 {
+      display: block;
+    }
+    #sidenav {
+      display: block;
+    }
+    #about .about-img {
+      position: relative;
+      margin: 30px 30px 30px 30px;
+      display: block;
   }
 }
